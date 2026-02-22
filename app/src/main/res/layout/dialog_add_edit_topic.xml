@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Topic"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Topic Name"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/surface_card"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:hintTextColor="@color/text_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTopicName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/text_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Icon name (e.g. algorithm, database)"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/surface_card"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:hintTextColor="@color/text_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/text_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Color Picker (simple chips) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose Color"
+        android:textColor="@color/text_hint"
+        android:textSize="13sp"/>
+
+    <LinearLayout
+        android:id="@+id/colorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <View android:id="@+id/colorBlue"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/topic_blue"/>
+        <View android:id="@+id/colorGreen"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/topic_green"/>
+        <View android:id="@+id/colorOrange"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/topic_orange"/>
+        <View android:id="@+id/colorRed"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/topic_red"/>
+        <View android:id="@+id/colorPurple"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:background="@color/topic_purple"/>
+    </LinearLayout>
+
+</LinearLayout>
