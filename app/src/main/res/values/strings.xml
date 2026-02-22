@@ -1,9 +1,54 @@
 <resources>
-    <string name="app_name">IT-notebook-app</string>
+    <string name="app_name">IT Formula Notebook</string>
+
     <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="home_dashboard">Home Dashboard</string>
+    <string name="search_formulas_hint">Search formulas…</string>
+    <string name="recently_viewed">Recently Viewed</string>
+    <string name="see_all">See all</string>
+    <string name="explore_topics">Topics</string>
+    <string name="no_recent_title">No recently viewed formulas</string>
+    <string name="no_recent_desc">Formulas you view will appear here</string>
+    <string name="add_formula">Add Formula</string>
+    <string name="formula_count">%d formulas</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="manage_topics">Manage Topics</string>
+    <string name="formula_detail">Formula Detail</string>
+    <string name="edit_formula">Edit Formula</string>
+    <string name="topic_detail">Topic Detail</string>
+
+    <string name="dark_mode">Dark Mode</string>
+    <string name="clear_history">Clear History</string>
+    <string name="about">About</string>
+    <string name="version">v1.0</string>
+
+    <string name="no_favorites_title">No favorites yet</string>
+    <string name="no_favorites_desc">Tap the ★ on any formula to save it here</string>
+    <string name="no_results_title">No results found</string>
+    <string name="no_results_desc">Try different keywords</string>
+
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="create">Create</string>
+    <string name="discard">Discard</string>
+
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="topic_deleted">Topic deleted</string>
+    <string name="topic_created">Topic created</string>
+    <string name="topic_updated">Topic updated</string>
+    <string name="formula_created">Formula created!</string>
+    <string name="formula_updated">Formula updated!</string>
+
     <string name="nav_saved">Saved</string>
     <string name="nav_history">History</string>
-    <string name="nav_settings">Settings</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
