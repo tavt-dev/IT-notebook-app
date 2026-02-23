@@ -68,8 +68,13 @@ public class HomeFragment extends Fragment {
     }
 
     private void setupClickListeners() {
-        binding.searchBar.setOnClickListener(v -> Navigation.findNavController(requireView())
-                .navigate(R.id.historyFragment));
+        binding.searchBar.setOnClickListener(v -> {
+            com.google.android.material.bottomnavigation.BottomNavigationView bottomNav =
+                    requireActivity().findViewById(R.id.bottomNav);
+            if (bottomNav != null) {
+                bottomNav.setSelectedItemId(R.id.historyFragment);
+            }
+        });
 
         binding.fabAdd.setOnClickListener(v -> Navigation.findNavController(requireView())
                 .navigate(R.id.action_home_to_addEditFormula));

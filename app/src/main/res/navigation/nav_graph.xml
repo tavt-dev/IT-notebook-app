@@ -9,6 +9,12 @@
         android:name="com.tien.it_notebook_app.ui.home.HomeFragment"
         android:label="Home">
         <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/historyFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false"/>
+        <action
             android:id="@+id/action_home_to_topicDetail"
             app:destination="@id/topicDetailFragment"/>
         <action
