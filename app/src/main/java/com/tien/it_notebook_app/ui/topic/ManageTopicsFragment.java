@@ -136,6 +136,7 @@ public class ManageTopicsFragment extends Fragment {
                         existingTopic.setIcon(icon);
                         existingTopic.setColor(selectedColor[0]);
                         topicRepository.update(existingTopic);
+                        binding.rvTopics.setAdapter(adapter);
                         Toast.makeText(getContext(), "Topic updated", Toast.LENGTH_SHORT).show();
                     } else {
                         Topic topic = new Topic(name, icon, selectedColor[0], System.currentTimeMillis());
