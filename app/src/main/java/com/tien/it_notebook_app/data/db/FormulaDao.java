@@ -17,7 +17,7 @@ public interface FormulaDao {
        @Query("SELECT * FROM formulas WHERE topicId = :topicId ORDER BY title ASC")
        LiveData<List<Formula>> getAllByTopic(int topicId);
 
-       @Query("SELECT * FROM formulas WHERE topicId = :topicId ORDER BY createdAt DESC")
+       @Query("SELECT * FROM formulas WHERE topicId = :topicId ORDER BY lastViewedAt DESC")
        LiveData<List<Formula>> getAllByTopicRecent(int topicId);
 
        @Query("SELECT * FROM formulas WHERE isFavorite = 1 ORDER BY title ASC")
