@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
+import androidx.navigation.NavOptions;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupNavigation() {
+
         NavHostFragment navHostFragment =
                 (NavHostFragment) getSupportFragmentManager()
                         .findFragmentById(R.id.nav_host_fragment);
@@ -51,6 +53,20 @@ public class MainActivity extends AppCompatActivity {
         if (navHostFragment == null) return;
 
         NavController navController = navHostFragment.getNavController();
-        NavigationUI.setupWithNavController(binding.bottomNav, navController);
+
+        binding.bottomNav.setOnItemSelectedListener(item -> {
+
+            NavOptions options = new NavOptions.Builder()
+                    .setLaunchSingleTop(true)
+                    .setPopUpTo(navController.getGraph().getStartDestinationId(), true)
+                    .build();
+
+            try {
+                navController.navigate(item.getItemId(), null, options);
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+        });
     }
 }
