@@ -6,23 +6,20 @@
     <color name="primary">#FF1313EC</color>
     <color name="primary_dark">#FF0E0EB8</color>
     <color name="primary_light">#FF4D7CFF</color>
-
-    <color name="bg_light">#FFF6F6F8</color>
-    <color name="bg_dark">#FF101022</color>
-    <color name="surface_dark">#FF232348</color>
-    <color name="surface_card">#FF1B1F3A</color>
-    <color name="surface_code">#FF1E1B2E</color>
-
-    <color name="text_primary_light">#FF1E1B4B</color>
-    <color name="text_primary_dark">#FFFFFFFF</color>
-    <color name="text_secondary">#FF9292C9</color>
-    <color name="text_hint">#FF8890B5</color>
-    <color name="text_code">#FFA8B4FF</color>
-
-    <color name="icon_inactive">#FF9AA0C4</color>
-    <color name="star_active">#FFFFD700</color>
-
     <color name="error">#FFDC2626</color>
+
+    <color name="colorBackground">#FFF6F6F8</color>
+    <color name="colorSurface">#FFFFFFFF</color>
+    <color name="colorSurfaceCode">#FFEEF0F8</color>
+    <color name="colorTextPrimary">#FF1E1B4B</color>
+    <color name="colorTextSecondary">#FF5C5C8A</color>
+    <color name="colorTextHint">#FF9AA0C4</color>
+    <color name="colorTextCode">#FF1313EC</color>
+    <color name="colorIconInactive">#FF9AA0C4</color>
+    <color name="colorChipBackground">#FFE6E8F5</color>
+    <color name="colorStatusBar">#FFF6F6F8</color>
+
+    <color name="star_active">#FFFFD700</color>
 
     <color name="topic_blue">#FF4D7CFF</color>
     <color name="topic_green">#FF4CAF50</color>
@@ -35,4 +32,16 @@
 
     <color name="nav_active">#FF4D7CFF</color>
     <color name="nav_inactive">#FF8890B5</color>
+
+    <color name="bg_dark">@color/colorBackground</color>
+    <color name="bg_light">@color/colorBackground</color>
+    <color name="surface_card">@color/colorSurface</color>
+    <color name="surface_dark">@color/colorSurface</color>
+    <color name="surface_code">@color/colorSurfaceCode</color>
+    <color name="text_primary_light">@color/colorTextPrimary</color>
+    <color name="text_primary_dark">@color/colorTextPrimary</color>
+    <color name="text_secondary">@color/colorTextSecondary</color>
+    <color name="text_hint">@color/colorTextHint</color>
+    <color name="text_code">@color/colorTextCode</color>
+    <color name="icon_inactive">@color/colorIconInactive</color>
 </resources>

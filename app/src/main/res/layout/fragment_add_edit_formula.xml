@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_dark"
+    android:background="@color/colorBackground"
     android:fillViewport="true">
 
     <LinearLayout
@@ -27,7 +27,7 @@
                 android:layout_height="36dp"
                 android:src="@drawable/ic_back"
                 android:contentDescription="Back"
-                app:tint="@android:color/white"
+                app:tint="@color/colorTextPrimary"
                 android:padding="4dp"
                 android:background="?attr/selectableItemBackgroundBorderless"/>
 
@@ -38,7 +38,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="12dp"
                 android:text="Add Formula"
-                android:textColor="@android:color/white"
+                android:textColor="@color/colorTextPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -51,19 +51,19 @@
             android:layout_marginTop="8dp"
             android:hint="Title"
             app:boxBackgroundMode="filled"
-            app:boxBackgroundColor="@color/surface_card"
+            app:boxBackgroundColor="@color/colorSurface"
             app:boxCornerRadiusTopStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusBottomEnd="12dp"
-            app:hintTextColor="@color/text_hint">
+            app:hintTextColor="@color/colorTextHint">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:textColorHint="@color/text_hint"/>
+                android:textColor="@color/colorTextPrimary"
+                android:textColorHint="@color/colorTextHint"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Topic Spinner -->
@@ -73,7 +73,7 @@
             android:paddingHorizontal="16dp"
             android:layout_marginTop="16dp"
             android:text="Category"
-            android:textColor="@color/text_hint"
+            android:textColor="@color/colorTextHint"
             android:textSize="13sp"/>
 
         <Spinner
@@ -82,9 +82,9 @@
             android:layout_height="48dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="4dp"
-            android:background="@color/surface_card"
+            android:background="@color/colorSurface"
             android:padding="8dp"
-            android:popupBackground="@color/surface_card"/>
+            android:popupBackground="@color/colorSurface"/>
 
         <!-- Content (Code/Logic) with Monospace badge -->
         <LinearLayout
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Code / Logic"
-                android:textColor="@color/text_hint"
+                android:textColor="@color/colorTextHint"
                 android:textSize="13sp"/>
 
             <TextView
@@ -110,7 +110,7 @@
                 android:textColor="@color/primary_light"
                 android:textSize="9sp"
                 android:textStyle="bold"
-                android:background="@color/surface_code"
+                android:background="@color/colorSurfaceCode"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="2dp"
                 android:letterSpacing="0.1"/>
@@ -122,12 +122,12 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="4dp"
             app:boxBackgroundMode="filled"
-            app:boxBackgroundColor="@color/surface_code"
+            app:boxBackgroundColor="@color/colorSurfaceCode"
             app:boxCornerRadiusTopStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusBottomEnd="12dp"
-            app:hintTextColor="@color/text_hint">
+            app:hintTextColor="@color/colorTextHint">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etContent"
@@ -136,8 +136,8 @@
                 android:minHeight="120dp"
                 android:gravity="top"
                 android:fontFamily="monospace"
-                android:textColor="@color/text_code"
-                android:textColorHint="@color/text_hint"
+                android:textColor="@color/colorTextCode"
+                android:textColorHint="@color/colorTextHint"
                 android:inputType="textMultiLine"
                 android:hint="Enter your formula here..."/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -150,12 +150,12 @@
             android:layout_marginTop="16dp"
             android:hint="Detailed Explanation"
             app:boxBackgroundMode="filled"
-            app:boxBackgroundColor="@color/surface_card"
+            app:boxBackgroundColor="@color/colorSurface"
             app:boxCornerRadiusTopStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusBottomEnd="12dp"
-            app:hintTextColor="@color/text_hint">
+            app:hintTextColor="@color/colorTextHint">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etExplanation"
@@ -163,8 +163,8 @@
                 android:layout_height="wrap_content"
                 android:minHeight="100dp"
                 android:gravity="top"
-                android:textColor="@android:color/white"
-                android:textColorHint="@color/text_hint"
+                android:textColor="@color/colorTextPrimary"
+                android:textColorHint="@color/colorTextHint"
                 android:inputType="textMultiLine"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -176,12 +176,12 @@
             android:layout_marginTop="16dp"
             android:hint="Examples (Optional)"
             app:boxBackgroundMode="filled"
-            app:boxBackgroundColor="@color/surface_card"
+            app:boxBackgroundColor="@color/colorSurface"
             app:boxCornerRadiusTopStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusBottomEnd="12dp"
-            app:hintTextColor="@color/text_hint">
+            app:hintTextColor="@color/colorTextHint">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etExamples"
@@ -189,8 +189,8 @@
                 android:layout_height="wrap_content"
                 android:minHeight="80dp"
                 android:gravity="top"
-                android:textColor="@android:color/white"
-                android:textColorHint="@color/text_hint"
+                android:textColor="@color/colorTextPrimary"
+                android:textColorHint="@color/colorTextHint"
                 android:inputType="textMultiLine"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -202,19 +202,19 @@
             android:layout_marginTop="16dp"
             android:hint="Tags (comma separated)"
             app:boxBackgroundMode="filled"
-            app:boxBackgroundColor="@color/surface_card"
+            app:boxBackgroundColor="@color/colorSurface"
             app:boxCornerRadiusTopStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusBottomEnd="12dp"
-            app:hintTextColor="@color/text_hint">
+            app:hintTextColor="@color/colorTextHint">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etTags"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:textColorHint="@color/text_hint"/>
+                android:textColor="@color/colorTextPrimary"
+                android:textColorHint="@color/colorTextHint"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Submit Button -->
@@ -225,7 +225,7 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="24dp"
             android:text="Create Formula"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:textSize="16sp"
             app:backgroundTint="@color/primary"
             app:cornerRadius="14dp"/>

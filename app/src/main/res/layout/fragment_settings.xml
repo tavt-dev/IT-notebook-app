@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_dark"
+    android:background="@color/colorBackground"
     android:fillViewport="true">
 
     <LinearLayout
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="Settings &amp; Utilities"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorTextPrimary"
             android:textSize="24sp"
             android:textStyle="bold"/>
 
@@ -41,7 +41,7 @@
             android:layout_height="72dp"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:background="@color/surface_card"
+            android:background="@color/colorSurface"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp"
             android:orientation="horizontal">
@@ -50,7 +50,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:gravity="center"
-                android:background="@color/surface_code">
+                android:background="@color/colorSurfaceCode">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -70,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dark Mode"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="15sp"/>
 
                 <TextView
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="Switch between light and dark themes"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/colorTextSecondary"
                     android:textSize="12sp"/>
             </LinearLayout>
 
@@ -106,7 +106,7 @@
             android:layout_height="72dp"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:background="@color/surface_card"
+            android:background="@color/colorSurface"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp"
             android:orientation="horizontal">
@@ -115,7 +115,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:gravity="center"
-                android:background="@color/surface_code">
+                android:background="@color/colorSurfaceCode">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -135,7 +135,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Clear History"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="15sp"/>
 
                 <TextView
@@ -143,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="Remove your recently viewed formulas"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/colorTextSecondary"
                     android:textSize="12sp"/>
             </LinearLayout>
 
@@ -155,7 +155,7 @@
                 android:textColor="@color/primary_light"
                 android:textSize="13sp"
                 style="@style/Widget.Material3.Button.TextButton"
-                app:backgroundTint="@color/surface_code"/>
+                app:backgroundTint="@color/colorSurfaceCode"/>
         </LinearLayout>
 
         <!-- Management Section -->
@@ -177,7 +177,7 @@
             android:layout_height="72dp"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:background="@color/surface_card"
+            android:background="@color/colorSurface"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp"
             android:orientation="horizontal"
@@ -188,7 +188,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:gravity="center"
-                android:background="@color/surface_code">
+                android:background="@color/colorSurfaceCode">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -208,7 +208,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Manage Topics"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="15sp"/>
 
                 <TextView
@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="Edit notebook taxonomy and categories"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/colorTextSecondary"
                     android:textSize="12sp"/>
             </LinearLayout>
 
@@ -225,7 +225,7 @@
                 android:layout_height="24dp"
                 android:src="@drawable/ic_back"
                 android:rotation="180"
-                app:tint="@color/icon_inactive"/>
+                app:tint="@color/colorIconInactive"/>
         </LinearLayout>
 
         <!-- About Section -->
@@ -246,7 +246,7 @@
             android:layout_height="72dp"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:background="@color/surface_card"
+            android:background="@color/colorSurface"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp"
             android:orientation="horizontal">
@@ -255,7 +255,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:gravity="center"
-                android:background="@color/surface_code">
+                android:background="@color/colorSurfaceCode">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -275,7 +275,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Version"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="15sp"/>
 
                 <TextView
@@ -283,7 +283,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="1.0.0 Stable Build"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/colorTextSecondary"
                     android:textSize="12sp"/>
             </LinearLayout>
 
@@ -295,7 +295,7 @@
                 android:textSize="11sp"
                 android:textStyle="bold"
                 android:fontFamily="monospace"
-                android:background="@color/surface_code"
+                android:background="@color/colorSurfaceCode"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="4dp"/>
         </LinearLayout>
@@ -326,7 +326,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="IT FORMULA NOTEBOOK"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/colorTextSecondary"
                     android:textSize="10sp"
                     android:fontFamily="monospace"
                     android:letterSpacing="0.15"/>
@@ -337,7 +337,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="© 2024 Developer Utilities"
-                android:textColor="@color/text_hint"
+                android:textColor="@color/colorTextHint"
                 android:textSize="10sp"/>
         </LinearLayout>
 

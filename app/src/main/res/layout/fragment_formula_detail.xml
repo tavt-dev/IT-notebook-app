@@ -5,7 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_dark">
+    android:background="@color/colorBackground">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                     android:layout_height="36dp"
                     android:src="@drawable/ic_back"
                     android:contentDescription="Back"
-                    app:tint="@android:color/white"
+                    app:tint="@color/colorTextPrimary"
                     android:padding="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"/>
 
@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/formula_detail"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:gravity="center"/>
@@ -53,7 +53,7 @@
                     android:layout_height="36dp"
                     android:src="@drawable/ic_edit"
                     android:contentDescription="Edit"
-                    app:tint="@android:color/white"
+                    app:tint="@color/colorTextPrimary"
                     android:padding="4dp"
                     android:layout_marginEnd="8dp"
                     android:background="?attr/selectableItemBackgroundBorderless"/>
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Formula Title"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="26sp"
                     android:textStyle="bold"/>
 
@@ -94,7 +94,7 @@
                     android:layout_height="36dp"
                     android:src="@drawable/ic_star_outline"
                     android:contentDescription="Favorite"
-                    app:tint="@color/icon_inactive"
+                    app:tint="@color/colorIconInactive"
                     android:padding="4dp"
                     android:layout_marginStart="8dp"
                     android:background="?attr/selectableItemBackgroundBorderless"/>
@@ -125,14 +125,14 @@
                     android:gravity="center_vertical"
                     android:paddingHorizontal="14dp"
                     android:paddingVertical="8dp"
-                    android:background="@color/surface_code">
+                    android:background="@color/colorSurfaceCode">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="LOGIC"
-                        android:textColor="@color/icon_inactive"
+                        android:textColor="@color/colorIconInactive"
                         android:textSize="10sp"
                         android:fontFamily="monospace"
                         android:letterSpacing="0.15"/>
@@ -162,10 +162,10 @@
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:fontFamily="monospace"
-                    android:textColor="@color/text_code"
+                    android:textColor="@color/colorTextCode"
                     android:textSize="14sp"
                     android:lineSpacingExtra="4dp"
-                    android:background="@color/surface_card"/>
+                    android:background="@color/colorSurface"/>
             </LinearLayout>
 
             <!-- Explanation Section -->
@@ -185,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="16dp"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/text_secondary"
+                android:textColor="@color/colorTextSecondary"
                 android:textSize="14sp"
                 android:lineSpacingExtra="4dp"/>
 
@@ -208,7 +208,7 @@
                 android:paddingHorizontal="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="24dp"
-                android:textColor="@color/text_secondary"
+                android:textColor="@color/colorTextSecondary"
                 android:textSize="14sp"
                 android:lineSpacingExtra="4dp"/>
 
@@ -224,10 +224,10 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
         android:text="Copy Formula"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:icon="@drawable/ic_copy"
-        app:iconTint="@android:color/white"
+        app:iconTint="@color/white"
         app:backgroundTint="@color/primary"
         app:cornerRadius="14dp"/>
 

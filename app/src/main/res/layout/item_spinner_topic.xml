@@ -6,8 +6,8 @@
     android:layout_height="48dp"
     android:gravity="center_vertical"
     android:paddingHorizontal="16dp"
-    android:textColor="@android:color/white"
+    android:textColor="@color/colorTextPrimary"
     android:textSize="15sp"
-    android:background="@color/surface_card"
+    android:background="@color/colorSurface"
     android:ellipsize="end"
     android:maxLines="1"/>

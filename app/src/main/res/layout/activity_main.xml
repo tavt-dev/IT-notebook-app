@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_dark"
+    android:background="@color/colorBackground"
     android:fitsSystemWindows="true">
 
     <androidx.fragment.app.FragmentContainerView
@@ -23,7 +23,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="0dp"
         android:layout_height="64dp"
-        android:background="@color/bg_dark"
+        android:background="@color/colorBackground"
         app:itemIconTint="@color/nav_selector"
         app:itemTextColor="@color/nav_selector"
         app:menu="@menu/menu_bottom"

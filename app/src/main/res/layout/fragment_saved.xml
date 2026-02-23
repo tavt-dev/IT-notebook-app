@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D1022">
+    android:background="@color/colorBackground">
 
     <!-- Title -->
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Favorites"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorTextPrimary"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -69,13 +69,13 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:src="@drawable/ic_star_outline"
-            app:tint="#4D7CFF"/>
+            app:tint="@color/primary_light"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No favorites yet"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorTextPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"/>
@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tap the star icon on any formula\nto add it to your favorites"
-            android:textColor="#9AA0C4"
+            android:textColor="@color/colorTextSecondary"
             android:textSize="14sp"
             android:gravity="center"
             android:layout_marginTop="8dp"/>
@@ -95,7 +95,7 @@
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
             android:text="Browse Formulas"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             app:backgroundTint="@color/primary"
             app:cornerRadius="12dp"/>
     </LinearLayout>

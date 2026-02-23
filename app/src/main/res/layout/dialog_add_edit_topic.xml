@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Topic"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/primary_light"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -22,19 +22,19 @@
         android:layout_marginTop="16dp"
         android:hint="Topic Name"
         app:boxBackgroundMode="filled"
-        app:boxBackgroundColor="@color/surface_card"
+        app:boxBackgroundColor="@color/colorSurface"
         app:boxCornerRadiusTopStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
         app:boxCornerRadiusBottomStart="12dp"
         app:boxCornerRadiusBottomEnd="12dp"
-        app:hintTextColor="@color/text_hint">
+        app:hintTextColor="@color/colorTextHint">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etTopicName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textColorHint="@color/text_hint"/>
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextHint"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -43,19 +43,19 @@
         android:layout_marginTop="12dp"
         android:hint="Icon name (e.g. algorithm, database)"
         app:boxBackgroundMode="filled"
-        app:boxBackgroundColor="@color/surface_card"
+        app:boxBackgroundColor="@color/colorSurface"
         app:boxCornerRadiusTopStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
         app:boxCornerRadiusBottomStart="12dp"
         app:boxCornerRadiusBottomEnd="12dp"
-        app:hintTextColor="@color/text_hint">
+        app:hintTextColor="@color/colorTextHint">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etIcon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textColorHint="@color/text_hint"/>
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextHint"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Color Picker (simple chips) -->
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Choose Color"
-        android:textColor="@color/text_hint"
+        android:textColor="@color/colorTextHint"
         android:textSize="13sp"/>
 
     <LinearLayout

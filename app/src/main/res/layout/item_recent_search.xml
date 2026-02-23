@@ -13,7 +13,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/ic_history"
-        app:tint="@color/text_hint"
+        app:tint="@color/colorTextHint"
         android:padding="2dp"/>
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_weight="1"
         android:layout_marginStart="12dp"
         android:text="keyword"
-        android:textColor="@color/text_primary_dark"
+        android:textColor="@color/colorTextPrimary"
         android:textSize="14sp"/>
 
     <ImageView
@@ -31,7 +31,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/ic_close"
-        app:tint="@color/text_hint"
+        app:tint="@color/colorTextHint"
         android:contentDescription="Remove"
         android:padding="2dp"
         android:background="?attr/selectableItemBackgroundBorderless"/>

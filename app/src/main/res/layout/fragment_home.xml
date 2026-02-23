@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_dark">
+    android:background="@color/colorBackground">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="@string/home_dashboard"
-                    android:textColor="@color/text_primary_dark"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
 
@@ -51,7 +51,7 @@
                     android:layout_height="36dp"
                     android:padding="6dp"
                     android:src="@drawable/ic_more_vert"
-                    app:tint="@color/text_primary_dark"
+                    app:tint="@color/colorTextPrimary"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="@null"/>
             </LinearLayout>
@@ -63,7 +63,7 @@
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="8dp"
                 app:cardCornerRadius="25dp"
-                app:cardBackgroundColor="@color/surface_card"
+                app:cardBackgroundColor="@color/colorSurface"
                 app:cardElevation="0dp"
                 android:clickable="true"
                 android:focusable="true">
@@ -79,7 +79,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_search"
-                        app:tint="@color/text_hint"
+                        app:tint="@color/colorTextHint"
                         android:contentDescription="@null"/>
 
                     <TextView
@@ -87,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
                         android:text="@string/search_formulas_hint"
-                        android:textColor="@color/text_hint"
+                        android:textColor="@color/colorTextHint"
                         android:textSize="14sp"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -107,7 +107,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_recent"
-                    app:tint="@color/text_secondary"
+                    app:tint="@color/colorTextSecondary"
                     android:contentDescription="@null"/>
 
                 <TextView
@@ -116,7 +116,7 @@
                     android:layout_weight="1"
                     android:layout_marginStart="8dp"
                     android:text="@string/recently_viewed"
-                    android:textColor="@color/text_primary_dark"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -143,7 +143,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:src="@drawable/ic_recent"
-                    app:tint="@color/icon_inactive"
+                    app:tint="@color/colorIconInactive"
                     android:contentDescription="@null"/>
 
                 <TextView
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/no_recent_title"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/colorTextSecondary"
                     android:textSize="14sp"/>
             </LinearLayout>
 
@@ -169,7 +169,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_grid"
-                    app:tint="@color/text_secondary"
+                    app:tint="@color/colorTextSecondary"
                     android:contentDescription="@null"/>
 
                 <TextView
@@ -178,7 +178,7 @@
                     android:layout_weight="1"
                     android:layout_marginStart="8dp"
                     android:text="@string/explore_topics"
-                    android:textColor="@color/text_primary_dark"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
@@ -197,7 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/manage_topics"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/colorTextSecondary"
                         android:textSize="13sp"/>
 
                     <ImageView
@@ -205,7 +205,7 @@
                         android:layout_height="16dp"
                         android:layout_marginStart="4dp"
                         android:src="@drawable/ic_settings"
-                        app:tint="@color/text_secondary"
+                        app:tint="@color/colorTextSecondary"
                         android:contentDescription="@null"/>
                 </LinearLayout>
 
