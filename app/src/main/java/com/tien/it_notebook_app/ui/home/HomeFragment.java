@@ -76,6 +76,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
         binding.fabAdd.setOnClickListener(v -> Navigation.findNavController(requireView())
                 .navigate(R.id.action_home_to_addEditFormula));
 
