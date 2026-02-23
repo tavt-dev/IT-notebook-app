@@ -107,25 +107,38 @@ public class ManageTopicsFragment extends Fragment {
         View colorRed = dialogView.findViewById(R.id.colorRed);
         View colorPurple = dialogView.findViewById(R.id.colorPurple);
 
+        final View[] colorViews = {colorBlue, colorGreen, colorOrange, colorRed, colorPurple};
+        final int[] colors = {0xFF4D7CFF, 0xFF4CAF50, 0xFFFF9800, 0xFFFF6B6B, 0xFF9C27B0};
+
         View.OnClickListener colorClickListener = v -> {
-            int id = v.getId();
-            if (id == R.id.colorBlue) selectedColor[0] = 0xFF4D7CFF;
-            else if (id == R.id.colorGreen) selectedColor[0] = 0xFF4CAF50;
-            else if (id == R.id.colorOrange) selectedColor[0] = 0xFFFF9800;
-            else if (id == R.id.colorRed) selectedColor[0] = 0xFFFF6B6B;
-            else if (id == R.id.colorPurple) selectedColor[0] = 0xFF9C27B0;
+            for (int i = 0; i < colorViews.length; i++) {
+                if (colorViews[i].getId() == v.getId()) {
+                    selectedColor[0] = colors[i];
+                    colorViews[i].animate().scaleX(0.8f).scaleY(0.8f).setDuration(150);
+                } else {
+                    colorViews[i].animate().scaleX(1.0f).scaleY(1.0f).setDuration(150);
+                }
+            }
         };
-        colorBlue.setOnClickListener(colorClickListener);
-        colorGreen.setOnClickListener(colorClickListener);
-        colorOrange.setOnClickListener(colorClickListener);
-        colorRed.setOnClickListener(colorClickListener);
-        colorPurple.setOnClickListener(colorClickListener);
+
+        for (View colorView : colorViews) {
+            colorView.setOnClickListener(colorClickListener);
+        }
 
         if (existingTopic != null) {
             tvTitle.setText("Edit Topic");
             etName.setText(existingTopic.getName());
             etIcon.setText(existingTopic.getIcon());
             selectedColor[0] = existingTopic.getColor();
+            for (int i = 0; i < colors.length; i++) {
+                if (colors[i] == selectedColor[0]) {
+                    colorViews[i].setScaleX(0.8f);
+                    colorViews[i].setScaleY(0.8f);
+                }
+            }
+        } else {
+            colorViews[0].setScaleX(0.8f);
+            colorViews[0].setScaleY(0.8f);
         }
 
         new MaterialAlertDialogBuilder(requireContext())
