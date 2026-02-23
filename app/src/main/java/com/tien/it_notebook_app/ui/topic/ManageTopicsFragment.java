@@ -64,6 +64,14 @@ public class ManageTopicsFragment extends Fragment {
                         .setNegativeButton("Cancel", null)
                         .show();
             }
+
+            @Override
+            public void onItemClick(Topic topic) {
+                Bundle bundle = new Bundle();
+                bundle.putInt("topicId", topic.getId());
+                Navigation.findNavController(requireView())
+                        .navigate(R.id.action_manageTopics_to_topicDetail, bundle);
+            }
         });
     }
 

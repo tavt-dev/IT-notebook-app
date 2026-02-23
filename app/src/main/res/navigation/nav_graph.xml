@@ -26,6 +26,7 @@
         <action
             android:id="@+id/action_home_to_manageTopics"
             app:destination="@id/manageTopicsFragment"/>
+
     </fragment>
 
     <fragment
@@ -105,6 +106,10 @@
     <fragment
         android:id="@+id/manageTopicsFragment"
         android:name="com.tien.it_notebook_app.ui.topic.ManageTopicsFragment"
-        android:label="Manage Topics"/>
+        android:label="Manage Topics">
+        <action
+            android:id="@+id/action_manageTopics_to_topicDetail"
+            app:destination="@id/topicDetailFragment"/>
+    </fragment>
 
 </navigation>

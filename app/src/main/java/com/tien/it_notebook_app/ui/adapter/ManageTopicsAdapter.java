@@ -16,6 +16,9 @@ public class ManageTopicsAdapter extends ListAdapter<Topic, ManageTopicsAdapter.
     public interface OnTopicManageListener {
         void onEditClick(Topic topic);
         void onDeleteClick(Topic topic);
+        void onItemClick(Topic topic);
+
+
     }
 
     private OnTopicManageListener listener;
@@ -61,6 +64,13 @@ public class ManageTopicsAdapter extends ListAdapter<Topic, ManageTopicsAdapter.
         ViewHolder(ItemTopicManageBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+
+            binding.getRoot().setOnClickListener(v -> {
+                int pos = getAdapterPosition();
+                if (pos != RecyclerView.NO_POSITION && listener != null) {
+                    listener.onItemClick(getItem(pos));
+                }
+            });
 
             binding.btnEdit.setOnClickListener(v -> {
                 int pos = getAdapterPosition();
